@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stationery - Premium Stores& Essentials</title>
+  
+  <!-- Stylesheets & External Resources -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top App Download Banner -->
+  <div class="app-promo-bar" id="promoBar">
+    <div class="app-promo-left">
+      <span class="app-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+      <span><strong>Shop On the Go</strong> — Install our app for a faster shopping experience.</span>
+    </div>
+    <div class="app-promo-right">
+      <a href="#products" class="btn-app"><i class="fa-brands fa-google-play"></i> Google Play</a>
+      <a href="#products" class="btn-app"><i class="fa-brands fa-apple"></i> App Store</a>
+      <button class="close-promo" id="closePromo" aria-label="Close promotion">&times;</button>
+    </div>
+  </div>
+
+  <!-- Announcement & Social Media Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-text">Cash on Delivery available on orders above ₹500</div>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Stationery Logo" onerror="this.style.display='none'">
+        <span style="color: red; font-size: 40px;">VAVIYA STORES</span>
+      </a>
+      
+      <!-- Search Bar Form -->
+      <form class="search-box" id="searchForm" role="search">
+        <span class="category-dropdown">Find products</span>
+        <input id="searchInput" type="search" placeholder="Search pens, notebooks, pencils..." aria-label="Search products">
+        <button class="search-btn" type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      
+      <!-- User Account and Cart Actions -->
+      <div class="user-actions">
+        <button class="action-icon" id="accountBtn" aria-label="Your account"><i class="fa-regular fa-user"></i></button>
+        <button class="action-icon cart-icon" id="cartIconBtn" aria-label="Open shopping cart">
+          <i class="fa-solid fa-bag-shopping"></i><span id="cartCount" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="main-hero-card">
+        <div class="hero-content">
+          <p class="eyebrow">JMV • WRITE YOUR STORY</p>
+          <h1>Your Everyday Essentials, Curated</h1>
+          <p>Pens, notebooks, planners &amp; tools<br>that fit seamlessly into your daily routine.</p>
+          <a href="#products" class="hero-cta">Shop stationery <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80" alt="Books and stationery">
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Banners (Collections) -->
+    <section class="feature-banners" aria-label="Featured collections">
+      <div class="banner-card card-blue">
+        <div class="banner-text">
+          <h3>Stationery that inspires every Day</h3>
+          <p>From pens that glide effortlessly to notebooks that hold your thoughts, discover tools designed to elevate your everyday.</p>
+          <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="banner-img"><img src="notebook.png" alt="Pens and notebooks" onerror="this.src='https://images.unsplash.com/photo-1455390582262-044c?auto=format&fit=crop&w=300&q=80';this.onerror=null"></div>
+      </div>
+      <div class="banner-card card-yellow">
+        <div class="banner-text">
+          <h3>Organize, focus, achieve</h3>
+          <p>Smart storage, sleek folders, and functional tools to bring clarity to every workspace.</p>
+          <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="banner-img"><img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=300&auto=format&fit=crop&q=80" alt="Planning and organization"></div>
+      </div>
+      <div class="banner-card card-cyan">
+        <div class="banner-text">
+          <h3>Where ideas take shape</h3>
+          <p>Premium art materials that let your imagination run free whether you're sketching, painting, or crafting.</p>
+          <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+        <div class="banner-img"><img src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=300&auto=format&fit=crop&q=80" alt="Colourful stationery and art supplies"></div>
+      </div>
+    </section>
+
+    <!-- Category Filter Buttons Section -->
+    <section class="category-section" id="categories">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR FAVOURITES</p><h2>Shop by Category</h2></div>
+        <p>Everything you need for school, college, office and creativity.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="cat-card active" data-category="All Stationery"><img src="https://media.gettyimages.com/id/182060333/photo/large-assortment-of-office-supplies-on-white-backdrop.jpg?s=612x612&w=gi&k=20&c=hVwgOma9MxReFpKzm6bgL3iWYeENnVSZs93ZQBoKEpw=" alt="all stationary apliences"><span>All Stationery</span></button>
+        <button class="cat-card" data-category="Pens"><img src="https://m.media-amazon.com/images/I/71B40ADF3+L.jpg" alt="pens"><span>Pens</span></button>
+        <button class="cat-card" data-category="Notebooks"><img src="https://quapri.in/_next/image?url=https%3A%2F%2Fwp.quapri.in%2Fwp-content%2Fuploads%2F2026%2F01%2Fwire-o-notebook.avif&w=1920&q=75" alt="notebooks"><span>Notebooks</span></button>
+        <button class="cat-card" data-category="Planners"><img src="https://scooboo.in/cdn/shop/collections/Scooboo_Cl_icon_Top_10_Planners.png?v=1760436710" alt=""><span>Planners</span></button>
+        <button class="cat-card" data-category="Pencils"><img src="https://m.media-amazon.com/images/I/71sxQyMB1mL.jpg" alt=""><span>Pencils</span></button>
+        <button class="cat-card" data-category="Erasers"><img src="https://www.kokuyocamlin.com/camel/camel-access/image/catalog/workshop/panoramic-art/8.jpg?date=2306161244" alt=""><span>Erasers</span></button>
+        <button class="cat-card" data-category="Sharpeners"><img src="https://www.quickpantry.in/cdn/shop/products/apsara-long-point-sharpener-1-pc-quick-pantry.jpg?v=1710538917" alt=""><span>Sharpeners</span></button>
+        <button class="cat-card" data-category="Sticky Notes"><img src="https://m.media-amazon.com/images/I/71qoE3z1I0L.jpg" alt=""><span>Sticky Notes</span></button>
+        <button class="cat-card" data-category="Memo Pads"><img src="https://i.etsystatic.com/31772906/r/il/c5046c/3465367563/il_1080xN.3465367563_21vt.jpg" alt=""><span>Memo Pads</span></button>
+        <button class="cat-card" data-category="Calendars"><img src="https://m.media-amazon.com/images/I/61WDz7117XL._AC_UF1000,1000_QL80_.jpg" alt=""><span>Calendars</span></button>
+        <button class="cat-card" data-category="Highlighters"><img src="https://static.pw.live/5eb393ee95fab7468a79d189/5f73ed04-94c5-45cb-b8af-8c419c0f14de.png" alt=""><span>Highlighters</span></button>
+        <button class="cat-card" data-category="Rulers"><img src="https://m.media-amazon.com/images/I/71LFA009P8L.jpg" alt=""><span>Rulers</span></button>
+        <button class="cat-card" data-category="To-do Lists"><img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=400&q=80" alt=""><span>To-do Lists</span></button>
+        <button class="cat-card" data-category="Journals"><img src="https://cpimg.tistatic.com/06324094/b/5/Practical-Book-Big-74-Pages.jpg" alt=""><span>Journals</span></button>
+        <button class="cat-card" data-category="Bookmarks"><img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=400&q=80" alt=""><span>Bookmarks</span></button>
+        <button class="cat-card" data-category="Notepads"><img src="https://solo.in/cdn/shop/collections/notepads-116330.webp?v=1742021618" alt=""><span>Notepads</span></button>
+        <button class="cat-card" data-category="Geometry Sets"><img src="https://statmo.in/wp-content/uploads/2017/03/c1.jpg" alt=""><span>Geometry Sets</span></button>
+        <button class="cat-card" data-category="Brushes"><img src="https://m.media-amazon.com/images/I/71uTVk82bVL._AC_UF350,350_QL80_.jpg" alt="paint brushes"><span>Paint Brushes</span></button>
+      </div>
+    </section>
+
+    <!-- Dynamic Product Display Section -->
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE JMV COLLECTION</p><h2>Popular Stationery</h2></div>
+        <p>Choose your essentials and add them to your bag.</p>
+      </div>
+      <!-- Products are dynamically injected here via JavaScript -->
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-results" id="emptyResults" hidden>No products found. Try another search or category.</p>
+    </section>
+
+    <!-- Value Proposition / Benefits Section -->
+    <section class="why-section">
+      <div><i class="fa-solid fa-truck-fast"></i><h3>Convenient Ordering</h3><p>Place your order in a few simple steps.</p></div>
+      <div><i class="fa-solid fa-box-open"></i><h3>Everyday Essentials</h3><p>Useful supplies for study, work and creativity.</p></div>
+      <div><i class="fa-solid fa-heart"></i><h3>Made for Your Desk</h3><p>Pick the tools that make your ideas happen.</p></div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <strong>JMV STATIONERY</strong>
+    <p>Your everyday stationery, all in one place.</p>
+    <small>© <span id="year"></span> JMV Stationery. All rights reserved.</small>
+  </footer>
+
+  <!-- Shopping Cart Slide-out Drawer & Overlay -->
+  <div class="overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-header">
+      <h2>Your Bag</h2>
+      <button id="closeCartBtn" class="icon-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+      <p class="cart-note">Delivery charges, if any, can be confirmed when your order is reviewed.</p>
+      <button class="primary-btn" id="checkoutBtn">Proceed to Order</button>
+    </div>
+  </aside>
+
+  <!-- Checkout / Order Form Modal -->
+  <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <div class="order-modal">
+      <button class="modal-close" id="closeOrderModal" aria-label="Close form">&times;</button>
+      <p class="eyebrow">JUST ONE MORE STEP</p>
+      <h2 id="orderTitle">Place Your Order</h2>
+      <p class="modal-intro">Enter your contact and delivery details. Your selected items will be included in the order summary.</p>
+      
+      <div class="order-summary" id="orderSummary"></div>
+      
+      <form id="orderForm">
+        <label for="customerName">Full Name <span>*</span></label>
+        <input id="customerName" name="name" autocomplete="name" placeholder="Enter your full name" required>
+        
+        <label for="customerPhone">Mobile Number <span>*</span></label>
+        <input id="customerPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" pattern="[6-9][0-9]{9}" minlength="10" maxlength="10" placeholder="10-digit mobile number" required>
+        
+        <label for="customerEmail">Email Address <small>(optional)</small></label>
+        <input id="customerEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+        
+        <label for="customerAddress">Delivery Address <span>*</span></label>
+        <textarea id="customerAddress" name="address" autocomplete="street-address" rows="3" placeholder="House/flat, street, area, city, PIN code" required></textarea>
+        
+        <label for="paymentMethod">Payment Method</label>
+        <select id="paymentMethod" name="payment">
+          <option value="Cash on Delivery">Cash on Delivery (where available)</option>
+          <option value="Confirm with customer">Confirm with me</option>
+        </select>
+        
+        <button class="primary-btn" type="submit">Submit Order Request</button>
+        <p class="form-footnote">This demo saves no payment details. Order requests are confirmed on this device only; connect a backend or WhatsApp number to receive them online.</p>
+      </form>
+      
+      <div id="orderSuccess" class="order-success" hidden aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Component -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript Script Link -->
+  <script src="script.js"></script>
+</body>
+</html>
